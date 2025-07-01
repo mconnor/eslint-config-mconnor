@@ -1,0 +1,76 @@
+{
+  "name": "eslint-config-mconnor",
+  "author": "Mike Connor",
+  "type": "module",
+  "repository": {
+    "url": "https://github.com/mconnor/eslint-config-mconnor"
+  },
+  "description":"various linting configs",
+  "version": "1.0.0",
+  "private": false,
+  "imports": {
+    "#*": "./src/*"
+  },
+  "exports": {
+    "./tailwind-lint": "./src/tw.lint.config.mjs",
+    "./turbo-config": "./src/turbo.lint.config.mjs",
+    "./next-lint": "./src/next.mjs",
+    "./ignores": "./src/ignores.config.mjs",
+    "./vue-config": "./src/vue.lint.config.mjs",
+    "./md-config": "./src/md.lint.config.mjs",
+    "./react-internal": "./src/react-internal.mjs",
+    "./ts-lint": "./src/ts.lint.config.mjs",
+    "./lit-config": "./src/lit.lint.config.mjs",
+    "./type-disable": "./src/tscheck.disable.config.mjs",
+    "./regex": "./src/regex.lint.config.mjs",
+    "./svelte5-app": "./src/svelte5.lint.config.mjs",
+    "./solid": "./src/sold.lint.config.mjs",
+    "./next-config": "./src/next.mjs",
+    "./simple-imports-sort": "./src/simple-imports-sort.lint.config.mjs"
+  },
+  "scripts": {
+    "format": "prettier . --write"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "catalog:",
+    "@eslint/compat": "catalog:",
+    "@eslint/css": "^0.9.0",
+    "@eslint/eslintrc": "catalog:",
+    "@eslint/js": "catalog:",
+    "@eslint/json": "catalog:",
+    "@eslint/markdown": "catalog:",
+    "@next/eslint-plugin-next": "catalog:",
+    "@typescript-eslint/parser": "catalog:",
+    "astro-eslint-parser": "catalog:",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-astro": "catalog:",
+    "eslint-plugin-barrel-files": "catalog:",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-lit": "catalog:",
+    "eslint-plugin-only-warn": "catalog:",
+    "eslint-plugin-react": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-regexp": "catalog:",
+    "eslint-plugin-simple-import-sort": "catalog:",
+    "eslint-plugin-solid": "catalog:",
+    "eslint-plugin-svelte": "catalog:",
+    "eslint-plugin-turbo": "catalog:",
+    "eslint-plugin-vue": "catalog:",
+    "eslint-plugin-wc": "catalog:",
+    "globals": "catalog:",
+    "prettier": "catalog:",
+    "prettier-plugin-astro": "catalog:",
+    "svelte-eslint-parser": "catalog:",
+    "typescript-eslint": "catalog:",
+    "vue-eslint-parser": "catalog:"
+  },
+  "engines": {
+    "node": ">= 22.9.0"
+  },
+  "packageManager": "pnpm@10.12.4"
+}
