@@ -68,9 +68,5 @@
     "svelte-eslint-parser": "catalog:",
     "typescript-eslint": "catalog:",
     "vue-eslint-parser": "catalog:"
-  },
-  "engines": {
-    "node": ">= 22.9.0"
-  },
-  "packageManager": "pnpm@10.12.4"
+  }
 }
