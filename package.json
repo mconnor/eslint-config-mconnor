@@ -6,7 +6,7 @@
     "url": "https://github.com/mconnor/eslint-config-mconnor"
   },
   "description": "various linting configs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "imports": {
     "#*": "./src/*"
@@ -68,9 +68,5 @@
     "svelte-eslint-parser": "^1.2.0",
     "typescript-eslint": "^8.35.0",
     "vue-eslint-parser": "^10.1.4"
-  },
-  "packageManager": "pnpm@10.12.4",
-  "engines": {
-    "node": ">= 22.9.0"
   }
 }
