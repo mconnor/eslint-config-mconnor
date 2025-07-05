@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'eslint/config';
 import css from '@eslint/css';
-import { tailwindSyntax } from '@eslint/css/syntax';
+import { tailwind4 } from "tailwind-csstree";
 
 export default defineConfig([
   {
@@ -11,8 +11,8 @@ export default defineConfig([
     },
     language: 'css/css',
     languageOptions: {
-      customSyntax: tailwindSyntax,
-      tolerant: true,
+      customSyntax: tailwind4,
+      // tolerant: true,
     },
     rules: {
       'css/no-empty-blocks': 'error',
