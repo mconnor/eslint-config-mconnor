@@ -7,7 +7,7 @@ import js from '@eslint/js';
 import eslintPluginAstro from 'eslint-plugin-astro';
 // import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
 
-// import onlyWarn from 'eslint-plugin-only-warn';
+import onlyWarn from 'eslint-plugin-only-warn';
 import tseslint from 'typescript-eslint';
 
 import astroParser from 'astro-eslint-parser';
@@ -23,7 +23,6 @@ export default tseslint.config(
   ignoresConfig,
   js.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
-
   {
     name: '[*] TS Rules',
 

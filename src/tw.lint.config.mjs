@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'eslint/config';
 import css from '@eslint/css';
-import { tailwind4 } from "tailwind-csstree";
+import { tailwind4 } from 'tailwind-csstree';
 
 export default defineConfig([
   {

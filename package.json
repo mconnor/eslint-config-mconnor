@@ -6,7 +6,7 @@
     "url": "https://github.com/mconnor/eslint-config-mconnor"
   },
   "description": "various linting configs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "imports": {
     "#*": "./src/*"
@@ -29,7 +29,8 @@
     "./simple-imports-sort": "./src/simple-imports-sort.lint.config.mjs"
   },
   "scripts": {
-    "prep": "prettier . --write"
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
   },
   "license": "MIT",
   "peerDependencies": {
