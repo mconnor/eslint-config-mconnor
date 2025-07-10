@@ -6,27 +6,30 @@
     "url": "https://github.com/mconnor/eslint-config-mconnor"
   },
   "description": "various linting configs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "imports": {
-    "#*": "./src/*"
+    "#*": "./src/lints/*"
   },
   "exports": {
-    "./tailwind-lint": "./src/tw.lint.config.mjs",
-    "./turbo-config": "./src/turbo.lint.config.mjs",
-    "./next-lint": "./src/next.mjs",
-    "./ignores": "./src/ignores.config.mjs",
-    "./vue-config": "./src/vue.lint.config.mjs",
-    "./md-config": "./src/md.lint.config.mjs",
-    "./react-internal": "./src/react-internal.mjs",
-    "./ts-lint": "./src/ts.lint.config.mjs",
-    "./lit-config": "./src/lit.lint.config.mjs",
-    "./type-disable": "./src/tscheck.disable.config.mjs",
-    "./regex": "./src/regex.lint.config.mjs",
-    "./svelte5-app": "./src/svelte5.lint.config.mjs",
-    "./solid": "./src/sold.lint.config.mjs",
-    "./next-config": "./src/next.mjs",
-    "./simple-imports-sort": "./src/simple-imports-sort.lint.config.mjs"
+    "./*": {
+      "default": "./src/lints/*.js"
+    },
+    "./tailwind-lint": "./src/lints/tw.lint.config.mjs",
+    "./turbo-config": "./src/lints/turbo.lint.config.mjs",
+    "./next-lint": "./src/lints/next.mjs",
+    "./ignores": "./src/lints/ignores.config.mjs",
+    "./vue-config": "./src/lints/vue.lint.config.mjs",
+    "./md-config": "./src/lints/md.lint.config.mjs",
+    "./react-internal": "./src/lints/react-internal.mjs",
+    "./ts-lint": "./src/lints/ts.lint.config.mjs",
+    "./lit-config": "./src/lints/lit.lint.config.mjs",
+    "./type-disable": "./src/lints/tscheck.disable.config.mjs",
+    "./regex": "./src/lints/regex.lint.config.mjs",
+    "./svelte5-app": "./src/lints/svelte5.lint.config.mjs",
+    "./solid": "./src/lints/sold.lint.config.mjs",
+    "./next-config": "./src/lints/next.mjs",
+    "./simple-imports-sort": "./src/lints/simple-imports-sort.lint.config.mjs"
   },
   "scripts": {
     "format": "prettier . --write",
@@ -70,5 +73,9 @@
     "tailwind-csstree": "^0.1.1",
     "typescript-eslint": "^8.36.0",
     "vue-eslint-parser": "^10.2.0"
-  }
+  },
+  "engines": {
+    "node": ">= 22.9.0"
+  },
+  "packageManager": "pnpm@10.13.1"
 }

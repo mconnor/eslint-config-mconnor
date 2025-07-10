@@ -1,9 +1,11 @@
-# My Eslint Settings
+# Eslint Settings by Mike Connor
 
 I've spent way too much time on this.
 
 Linting configs for
 
+- Astro
+- Typescript
 - next/react
 - vue
 - svelte
