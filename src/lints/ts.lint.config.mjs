@@ -14,14 +14,14 @@ import astroParser from 'astro-eslint-parser';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import globals from 'globals';
 import ignoresConfig from './ignores.config.mjs';
-
+import { config as baseConfig } from "./index.mjs";
 import extensionInstanceObj from './fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
 
 export default tseslint.config(
-  // @ts-ignore
-  ignoresConfig,
-  js.configs.recommended,
+  baseConfig,
+  // ignoresConfig,
+  // js.configs.recommended,
   tseslint.configs.recommendedTypeChecked,
   {
     name: '[*] TS Rules',
@@ -106,46 +106,6 @@ export default tseslint.config(
     name: '[*] js files',
     files: ['**/*.js'],
     extends: [tseslint.configs.disableTypeChecked],
-  },
-
-  // ,
-  // {
-  //   files: ['**/*.ts'],
-  //   extends: [
-  //     tseslint.configs.recommendedTypeChecked,
-  //     tseslint.configs.stylisticTypeChecked,
-  //   ],
-  //   rules: {
-  //     '@typescript-eslint/triple-slash-reference': 'warn',
-  //     '@typescript-eslint/array-type': 'error',
-  //     '@typescript-eslint/consistent-type-imports': 'error',
-  //     '@typescript-eslint/no-unused-expressions': [
-  //       'error',
-  //       {
-  //         allowShortCircuit: true, // Allow short-circuit expressions like `a && a()`
-  //         allowTernary: true, // Allow ternary operations like `a ? b() : c()`
-  //         allowTaggedTemplates: true, // Allow tagged template literals like `taggedTemplate` (optional)
-  //       },
-  //     ],
-  //     '@typescript-eslint/no-empty-function': 'warn',
-  //   },
-  // }
-
-  eslintConfigPrettier,
+  }
 );
 
-// export default [
-//   turboConfig['flat/recommended'],
-//   ...tsConfig,
-//   // Other configuration
-//   {
-//     rules: {
-//       'turbo/no-undeclared-env-vars': [
-//         'error',
-//         {
-//           allowList: ['^ENV_[A-Z]+$'],
-//         },
-//       ],
-//     },
-//   },
-// ];
