@@ -1,6 +1,11 @@
-// @ts-check
+
 import markdown from '@eslint/markdown';
 
+/**
+ * A shared ESLint configuration for the repository.
+ *
+ * @type {import("eslint").Linter.Config}
+ * */
 export default [
   {
     // Apply the Markdown processor to all .md files

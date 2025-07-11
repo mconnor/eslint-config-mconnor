@@ -1,31 +1,23 @@
-// @ts-check
+
 import 'eslint-plugin-only-warn';
-import js from '@eslint/js';
-
-// import eslintPluginImport from 'eslint-plugin-import';
-// import barrelFiles from 'eslint-plugin-barrel-files';
 import eslintPluginAstro from 'eslint-plugin-astro';
-// import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
-
-import onlyWarn from 'eslint-plugin-only-warn';
 import tseslint from 'typescript-eslint';
-
 import astroParser from 'astro-eslint-parser';
-import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import globals from 'globals';
-import ignoresConfig from './ignores.config.mjs';
-import { config as baseConfig } from "./index.mjs";
-import extensionInstanceObj from './fileExtensions.mjs';
+import baseConfig from "./index.mjs";
+import extensionInstanceObj from '#lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
 
+
+/**
+ * A shared ESLint configuration for the repository.
+ *
+ * @type {import("eslint").Linter.Config}
+ * */
 export default tseslint.config(
   baseConfig,
-  // ignoresConfig,
-  // js.configs.recommended,
-  tseslint.configs.recommendedTypeChecked,
   {
     name: '[*] TS Rules',
-
     languageOptions: {
       ecmaVersion: 'latest',
       parser: tseslint.parser,
@@ -48,16 +40,6 @@ export default tseslint.config(
       '@typescript-eslint/no-unused-vars': 'off',
       '@typescript-eslint/no-unused-expressions': 'off',
       '@typescript-eslint/consistent-type-definitions': 'warn',
-
-      // 'import/named': 'warn',
-      // 'import/namespace': 'warn',
-      // 'import/default': 'off',
-      // 'import/no-named-as-default-member': 'warn',
-      // 'import/no-unresolved': 'warn',
-      // 'import/no-named-as-default': 'warn',
-      // 'import/no-cycle': 'warn',
-      // 'import/no-unused-modules': 'warn',
-      // 'import/no-deprecated': 'warn',
     },
   },
 

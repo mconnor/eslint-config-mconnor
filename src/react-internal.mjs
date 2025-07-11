@@ -1,11 +1,11 @@
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
 import globals from 'globals';
-import { defineConfig, globalIgnores } from 'eslint/config';
+import { defineConfig } from 'eslint/config';
 
 import { config as baseConfig } from './nextBase.mjs';
 
-import extensionInstanceObj from './fileExtensions.mjs';
+import extensionInstanceObj from '#lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
 
 /**

@@ -14,7 +14,7 @@ import { configs as wc } from 'eslint-plugin-wc';
 // );
 
 /** @type {import("eslint").Linter.Config} */
-const config = [
+export default [
   lit['flat/recommended'],
   wc['flat/recommended'],
   {
@@ -25,4 +25,4 @@ const config = [
   },
 ];
 
-export default config;
+

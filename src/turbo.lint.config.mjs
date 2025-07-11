@@ -7,7 +7,7 @@ import onlyWarn from 'eslint-plugin-only-warn';
  *
  * @type {import("eslint").Linter.Config}
  * */
-const config = [
+export default [
   {
     plugins: {
       turbo: turboPlugin,
@@ -23,4 +23,4 @@ const config = [
   },
 ];
 
-export default config;
+
