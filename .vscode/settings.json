@@ -9,4 +9,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "debug.javascript.defaultRuntimeExecutable": {
+    "pwa-node": "/Users/mikeconnor/.local/share/mise/shims/node"
+  },
 }

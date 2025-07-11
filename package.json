@@ -6,30 +6,72 @@
     "url": "https://github.com/mconnor/eslint-config-mconnor"
   },
   "description": "various linting configs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": false,
   "imports": {
-    "#*": "./src/lints/*"
+    "#*": "./src/*"
   },
   "exports": {
-    "./*": {
-      "default": "./src/lints/*.js"
+    "./tailwind-lint": {
+      "types": "./index.d.ts",
+      "default": "./tw.lint.config.mjs"
     },
-    "./tailwind-lint": "./src/lints/tw.lint.config.mjs",
-    "./turbo-config": "./src/lints/turbo.lint.config.mjs",
-    "./next-lint": "./src/lints/next.mjs",
-    "./ignores": "./src/lints/ignores.config.mjs",
-    "./vue-config": "./src/lints/vue.lint.config.mjs",
-    "./md-config": "./src/lints/md.lint.config.mjs",
-    "./react-internal": "./src/lints/react-internal.mjs",
-    "./ts-lint": "./src/lints/ts.lint.config.mjs",
-    "./lit-config": "./src/lints/lit.lint.config.mjs",
-    "./type-disable": "./src/lints/tscheck.disable.config.mjs",
-    "./regex": "./src/lints/regex.lint.config.mjs",
-    "./svelte5-app": "./src/lints/svelte5.lint.config.mjs",
-    "./solid": "./src/lints/sold.lint.config.mjs",
-    "./next-config": "./src/lints/next.mjs",
-    "./simple-imports-sort": "./src/lints/simple-imports-sort.lint.config.mjs"
+    "./turbo-config": {
+      "types": "./index.d.ts",
+      "default": "./turbo.lint.config.mjs"
+    },
+    "./next-lint": {
+      "types": "./index.d.ts",
+      "default": "./next.mjs"
+    },
+    "./ignores": {
+      "types": "./index.d.ts",
+      "default": "./ignores.config.mjs"
+    },
+    "./vue-config": {
+      "types": "./index.d.ts",
+      "default": "./vue.lint.config.mjs"
+    },
+    "./md-config": {
+      "types": "./index.d.ts",
+      "default": "./md.lint.config.mjs"
+    },
+    "./react-internal": {
+      "types": "./index.d.ts",
+      "default": "./react-internal.mjs"
+    },
+    "./ts-lint": {
+      "types": "./index.d.ts",
+      "default": "./ts.lint.config.mjs"
+    },
+    "./lit-config": {
+      "types": "./index.d.ts",
+      "default": "./lit.lint.config.mjs"
+    },
+    "./type-disable": {
+      "types": "./index.d.ts",
+      "default": "./tscheck.disable.config.mjs"
+    },
+    "./regex": {
+      "types": "./index.d.ts",
+      "default": "./regex.lint.config.mjs"
+    },
+    "./svelte5-app": {
+      "types": "./index.d.ts",
+      "default": "./svelte5.lint.config.mjs"
+    },
+    "./solid": {
+      "types": "./index.d.ts",
+      "default": "./sold.lint.config.mjs"
+    },
+    "./next-config": {
+      "types": "./index.d.ts",
+      "default": "./next.mjs"
+    },
+    "./simple-imports-sort": {
+      "types": "./index.d.ts",
+      "default": "./simple-imports-sort.lint.config.mjs"
+    }
   },
   "scripts": {
     "format": "prettier . --write",
@@ -44,13 +86,13 @@
     "@eslint/compat": "^1.3.1",
     "@eslint/css": "^0.10.0",
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.30.1",
+    "@eslint/js": "^9.31.0",
     "@eslint/json": "^0.13.0",
     "@eslint/markdown": "^7.0.0",
     "@next/eslint-plugin-next": "^15.3.5",
     "@typescript-eslint/parser": "^8.36.0",
     "astro-eslint-parser": "^1.2.2",
-    "eslint": "^9.30.1",
+    "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-astro": "^1.3.1",
     "eslint-plugin-barrel-files": "^3.0.1",
