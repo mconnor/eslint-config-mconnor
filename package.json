@@ -6,7 +6,7 @@
     "url": "https://github.com/mconnor/eslint-config-mconnor"
   },
   "description": "various linting configs",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "private": false,
   "imports": {
     "#*": "./src/*"
@@ -46,7 +46,7 @@
       "default": "./svelte5.lint.config.mjs"
     },
     "./solid-lint": {
-      "default": "./sold.lint.config.mjs"
+      "default": "./solid.lint.config.mjs"
     },
     "./simple-imports-lint": {
       "default": "./simple-imports-sort.lint.config.mjs"

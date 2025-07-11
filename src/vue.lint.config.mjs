@@ -1,13 +1,13 @@
 
 import pluginVue from 'eslint-plugin-vue';
-import ignoresConfig from '#lib/ignores.config.mjs';
+import ignoresConfig from './lib/ignores.config.mjs';
 import vueParser from 'vue-eslint-parser';
 
 import eslintConfigPrettier from 'eslint-config-prettier';
 
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
-import extensionInstanceObj from '#lib/fileExtensions.mjs';
+import extensionInstanceObj from './lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
 
 

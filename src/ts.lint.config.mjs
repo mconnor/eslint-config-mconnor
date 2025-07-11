@@ -5,7 +5,7 @@ import tseslint from 'typescript-eslint';
 import astroParser from 'astro-eslint-parser';
 import globals from 'globals';
 import baseConfig from "./index.mjs";
-import extensionInstanceObj from '#lib/fileExtensions.mjs';
+import extensionInstanceObj from './lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
 
 

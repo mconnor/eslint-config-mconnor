@@ -2,10 +2,10 @@
 import * as svelteParser from 'svelte-eslint-parser';
 import svelte from 'eslint-plugin-svelte';
 // import globals from 'globals';
-// import ignoresConfig from '#lib/ignores.config.mjs';
+// import ignoresConfig from './lib/ignores.config.mjs';
 import tseslint from 'typescript-eslint';
 
-import extensionInstanceObj from '#lib/fileExtensions.mjs';
+import extensionInstanceObj from './lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
 
 

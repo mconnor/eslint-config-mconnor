@@ -5,7 +5,7 @@ import { defineConfig } from 'eslint/config';
 
 import { config as baseConfig } from './nextBase.mjs';
 
-import extensionInstanceObj from '#lib/fileExtensions.mjs';
+import extensionInstanceObj from './lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
 
 /**
