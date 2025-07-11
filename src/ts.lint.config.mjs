@@ -1,13 +1,11 @@
-
 import 'eslint-plugin-only-warn';
 import eslintPluginAstro from 'eslint-plugin-astro';
 import tseslint from 'typescript-eslint';
 import astroParser from 'astro-eslint-parser';
 import globals from 'globals';
-import baseConfig from "./index.mjs";
+import baseConfig from './index.mjs';
 import extensionInstanceObj from './lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
-
 
 /**
  * A shared ESLint configuration for the repository.
@@ -88,6 +86,5 @@ export default tseslint.config(
     name: '[*] js files',
     files: ['**/*.js'],
     extends: [tseslint.configs.disableTypeChecked],
-  }
+  },
 );
-

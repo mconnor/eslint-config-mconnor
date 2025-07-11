@@ -1,4 +1,3 @@
-
 import pluginVue from 'eslint-plugin-vue';
 import ignoresConfig from './lib/ignores.config.mjs';
 import vueParser from 'vue-eslint-parser';
@@ -9,7 +8,6 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import extensionInstanceObj from './lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
-
 
 /**
  * A shared ESLint configuration for the repository.

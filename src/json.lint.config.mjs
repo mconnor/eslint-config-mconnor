@@ -1,4 +1,3 @@
-
 import json from '@eslint/json';
 
 /**

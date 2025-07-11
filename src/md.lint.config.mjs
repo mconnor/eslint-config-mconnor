@@ -1,4 +1,3 @@
-
 import markdown from '@eslint/markdown';
 
 /**

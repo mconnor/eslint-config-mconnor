@@ -1,8 +1,6 @@
-
 import { defineConfig } from 'eslint/config';
 import css from '@eslint/css';
 import { tailwind4 } from 'tailwind-csstree';
-
 
 /**
  * A shared ESLint configuration for the repository.

@@ -1,4 +1,3 @@
-
 import * as svelteParser from 'svelte-eslint-parser';
 import svelte from 'eslint-plugin-svelte';
 // import globals from 'globals';
@@ -7,7 +6,6 @@ import tseslint from 'typescript-eslint';
 
 import extensionInstanceObj from './lib/fileExtensions.mjs';
 const extraFileExtensions = extensionInstanceObj.getExtensions();
-
 
 /**
  * A shared ESLint configuration for the repository.
